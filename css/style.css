@@ -53,13 +53,13 @@ header {
 }
 
   .image{
-  	/* background-color: #507d2a88; */
-    background-color: #507d2a;
+  	/* background-color: #4F301F88; */
+    background-color: #4F301F;
   	width: 100%;
   	padding: 10px;
   	color: white;
   	font-size: 20px;
-    box-shadow: 0 4px 12px #507d2a88;
+    box-shadow: 0 4px 12px #4F301F88;
     /* backdrop-filter: blur(16px); */
 
     
@@ -86,8 +86,8 @@ header {
 
 }
 .icons{
-	width: 20%;
-	height: 15%;
+	width: 10%;
+	height: 2%;
 	padding: 13px;
 	transition: transform .5s;
 	align-items: center;
@@ -113,13 +113,25 @@ header {
   font-weight: bolder;
 }
  .image1{
-    background-color: #507d2a;
+    background-color: #4F301F;
     width: 100%;
+    height: 560px;
     padding: 10px;
     color: white;
     font-size: 20px;
+    display:block;
+  
   }
-
+  .linktree{
+    background-color: #507D2A;
+    width: 100%;
+    height: 1120px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    display:block;
+  
+  }
 p{
   line-height: 1.6;
 }
@@ -133,4 +145,7 @@ form{
     flex-direction: column;
   }
 
+}
+a {
+  text-decoration: none !important;
 }
