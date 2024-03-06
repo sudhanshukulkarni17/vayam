@@ -1,269 +1,90 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Vayam</title>
-    <link rel="stylesheet" href="../css/accordion.css">
-  </head>
-  <body>
-    <h1>Vayam Nested Accordion</h1>
-    <div class="container">
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    Life on Land and sustainable communities
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" 
-                  data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <title>Vayam</title>
+  <!-- <link rel="stylesheet" href="../css/accordion.css"> -->
+  <link rel="stylesheet" href="../css/navbar.css">
+</head>
 
-                        <div class="accordion" id="accordionExampleOne">
-                            <!-- <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOneOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                    data-bs-target="#collapseOneOne" aria-expanded="false" aria-controls="collapseOneOne">
-                                    Jungle Jeevika
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOneOne" class="accordion-collapse collapse" aria-labelledby="headingOneOne" 
-                                  data-bs-parent="#accordionExampleOne">
-                                    <div class="accordion-body">
-                                        People in tribal villages have lived in harmony with forests. This project builds on this foundation coupling conservation (of Jungle) and livelihood (Jeevika). 12 village Gramsabhas are participating in this project with the goal of restoring what is weak, growing what is most wanted, and controlling harvest to sustain it. This project covers over 1,400 hectares of community forests.
-                                    </div>
-                                  </div>
-                            </div>
+<body class="vh-100 overflow-hidden">
 
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingOneTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                data-bs-target="#collapseOneTwo" aria-expanded="false" aria-controls="collapseOneTwo">
-                                Biodiversity registers
-                                </button>
-                              </h2>
-                              <div id="collapseOneTwo" class="accordion-collapse collapse" aria-labelledby="headingOneTwo" data-bs-parent="#accordionExampleOne">
-                                <div class="accordion-body">
-                                    Thirteen villages have participated in this exercise documenting their traditional knowledge about the forest resources and biodiversity. Average 200 plant species are documented. This documentation goes on for a year and is interspersed with voluntary activities for conservation and protection.
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOneThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                    data-bs-target="#collapseOneThree" aria-expanded="false" aria-controls="collapseOneTwo">
-                                    Product Development
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOneThree" class="accordion-collapse collapse" aria-labelledby="headingOneThree" 
-                                  data-bs-parent="#accordionExampleOne">
-                                    <div class="accordion-body">
-                                        We have developed many nutrient-rich products using local raw materials. These products includes RUSF, RUTF and health-drinks. The cost of these products is cheaper as compared to the products in the existing market. These products can be prepared at household as well.
-                                    </div>
-                                  </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOneFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                    data-bs-target="#collapseOneFour" aria-expanded="false" aria-controls="collapseOneFour">
-                                    Forest food festivals
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOneFour" class="accordion-collapse collapse" aria-labelledby="headingOneFour" 
-                                  data-bs-parent="#accordionExampleOne">
-                                    <div class="accordion-body">
-                                        These festivals are organised by village assemblies (Gram-Sabhas) and guided by Vayam. The purpose is to document wild edibles and transfer the knowledge to the next generation. The festivals are not for marketing of rare wild edibles. It is a village festival to protect and sustain this super-organic free food and give it its due prestige and protection. 68 villages have conducted such festivals so far. Over 76 wild edible plants are documented.
-                                    </div>
-                                  </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Quality Education
-                                    </button>
-                                  </h2>
-                                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" 
-                                  data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                
-                                        <div class="accordion" id="accordionExampleOne">
-                                            <!-- <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingFourOne">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                                    data-bs-target="#collapseFourOne" aria-expanded="false" aria-controls="collapseFourOne">
-                                                    Dhadpad Prayogshala
-                                                    </button>
-                                                  </h2>
-                                                  <div id="collapseFourOne" class="accordion-collapse collapse" aria-labelledby="headingFourOne" 
-                                                  data-bs-parent="#accordionExampleOne">
-                                                    <div class="accordion-body">
-                                                        This is a small make-n-break laboratory set up by Vayam in all local government (ZP) high schools. Children can make many models (as well as break them) in this laboratory that covers the entire science curriculum of high schools. The models use all low-cost trash material easily accessible to children. The principle and practice of ‘Learning by Doing’ has made science easy.
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                  </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOneSix">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                    data-bs-target="#collapseOneSix" aria-expanded="false" aria-controls="collapseOneSix">
-                                    Forest Rights awareness
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOneSix" class="accordion-collapse collapse" aria-labelledby="headingOneSix" 
-                                  data-bs-parent="#accordionExampleOne">
-                                    <div class="accordion-body">
-                                        Vayam has helped tribal farmers and forest dwellers acquire their land rights as per the Forest Rights Act 2006. We have put our efforts into capacity building of villagers, frontline government persons, and lobby for rights from district to state level. We have successful in securing land rights of 4,500 farmers. We have also helped 15 villages secure Community Forest Resource Rights over an average of 100 hectares each.
-                                    </div>
-                                  </div>
-                            </div>
-
-                        </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Strong inclusive community institutions
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" 
-                  data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-
-                        <div class="accordion" id="accordionExampleOne">
-                            <!-- <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwoOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                    data-bs-target="#collapseTwoOne" aria-expanded="false" aria-controls="collapseTwoOne">
-                                    Padopadi Swaraj
-                                    </button>
-                                  </h2>
-                                  <div id="collapseTwoOne" class="accordion-collapse collapse" aria-labelledby="headingTwoOne" 
-                                  data-bs-parent="#accordionExampleOne">
-                                    <div class="accordion-body">
-                                        Pada means a small hamlet and our constitution says that each village shall have a Gram-Sabha; a self-governing assembly. ‘Padopadi Swaraj’ is our endeavour to take the constitutional provisions to every small village i.e. padopadi. Vayam has helped many villages across four tribal blocks to build strong community institutions; i.e. Gram-Sabha. These Gram-Sabhas are legally recognized local governing bodies with direct participation of citizens. The empowered Gram Sabhas have brought openness in government schemes, transparency in funds, and have framed rules for judicious extraction from forest and water sources.
-                                    </div>
-                                  </div>
-                            </div>
-
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingTwoTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                data-bs-target="#collapseTwoTwo" aria-expanded="false" aria-controls="collapseTwoTwo">
-                                PESA Jagran Abhiyan
-                                </button>
-                              </h2>
-                              <div id="collapseTwoTwo" class="accordion-collapse collapse" aria-labelledby="headingTwoTwo" data-bs-parent="#accordionExampleOne">
-                                <div class="accordion-body">
-                                    Through this initiative we aim to bring new villages in the realm of effective and just self-governance as envisaged in PESA (Panchayats Extension to Scheduled Areas) law. The law requires that a majority of voters in a small .hamlet or Pada sit together and pass a resolution for notifying a separate Gramsabha. Vayam volunteers fan out to far-off villages, to alert and motivate people to become self-reliant through their own Gram Sabhas. Many villages have responded positively and received separate Gram-Sabha status as well as funds to run it efficiently.
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-            </div>
-            <!-- </div> -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Zero hunger and miscellaneous work
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" 
-                  data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-
-                        <div class="accordion" id="accordionExampleOne">
-                            <!-- <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThreeOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                    data-bs-target="#collapseThreeOne" aria-expanded="false" aria-controls="collapseThreeOne">
-                                    Zero migration NREGA
-                                    </button>
-                                  </h2>
-                                  <div id="collapseThreeOne" class="accordion-collapse collapse" aria-labelledby="headingThreeOne" 
-                                  data-bs-parent="#accordionExampleOne">
-                                    <div class="accordion-body">
-                                        National Rural Employment Guarantee Act (NREGA) assures all villagers unskilled wage employment in their own village, only if they demand so. From fighting the bureaucracy about non-availability of demand forms, to getting wages on time, and to exposing corruption - Vayam team has taken on every battle. And has won - for 18,000 families from 200+ villages - decent work and wages. Many villages are self-reliant and Vayam is proud that these villages don’t need Vayam’s help anymore. This has reduced the distress migration of people and has brought stability in families and security for children.
-                                    </div>
-                                  </div>
-                            </div>
-
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingThreeTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                data-bs-target="#collapseThreeTwo" aria-expanded="false" aria-controls="collapseThreeTwo">
-                                Suposhan - bhaji-wadi and Jalkund
-                                </button>
-                              </h2>
-                              <div id="collapseThreeTwo" class="accordion-collapse collapse" aria-labelledby="headingThreeTwo" data-bs-parent="#accordionExampleOne">
-                                <div class="accordion-body">
-                                    Vayam team noticed that people grow vegetables in their backyards in monsoon. Once the monsoon is over, fresh vegetables vanish from their daily diet. This contributes to the infamous malnutrition problem of tribals. Vayam introduced a 20 sq.m. mini-veggie-farm (Bhaji wadi) along with a mini-farm-pond (5000 liters with geo-membrane mulching) to water the mini-farm for at least five to six months. This has assured fresh vegetables in the daily diet of 300 tribal families. There is no better guarantee of ‘Zero Hunger’ than people being able to grow and eat their own food.
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Quality Education
-                    </button>
-                  </h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" 
-                  data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-
-                        <div class="accordion" id="accordionExampleOne">
-                            <!-- <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFourOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                    data-bs-target="#collapseFourOne" aria-expanded="false" aria-controls="collapseFourOne">
-                                    Dhadpad Prayogshala
-                                    </button>
-                                  </h2>
-                                  <div id="collapseFourOne" class="accordion-collapse collapse" aria-labelledby="headingFourOne" 
-                                  data-bs-parent="#accordionExampleOne">
-                                    <div class="accordion-body">
-                                        This is a small make-n-break laboratory set up by Vayam in all local government (ZP) high schools. Children can make many models (as well as break them) in this laboratory that covers the entire science curriculum of high schools. The models use all low-cost trash material easily accessible to children. The principle and practice of ‘Learning by Doing’ has made science easy.
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-            </div>
-            
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Our Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">GIS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Linktree</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">About</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <!-- Hero section -->
+
+  <section class="hero-section">
+    <div class="container d-flex align-items-center justify-content-center fs-1 text-white fl">
+      <h1>Vayam</h1>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+    <footer>
+			<a href="index.html#navbar"><img src="../images/brochureVayam2.jpg" width="100%"></a>
+		</footer>
+  </section>
+
+  <!-- End Hero Section-->
+
+
+
+
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
