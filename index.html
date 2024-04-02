@@ -1,247 +1,1201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>Vayam</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="ICON" type="image/ico" href="../images/VayamLogo.jpeg">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png/>
-<link
-  rel=" icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-	<link rel="manifest" href="favicon/site.webmanifest" />
-	<!-- Style Sheet -->
-	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <title>Vayam</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-	<!-- FontAwesome CDN ICONS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicons -->
+  <link href="assets/img/VayamLogoTransparent.png" rel="icon">
+  <link href="assets/img/VayamLogoTransparent.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Name: Vayam
+  * Updated: Mar 13 2024 with Bootstrap v5.3.3
+  * Author: Sudhanshu Kulkarni
+  ======================================================== -->
 </head>
 
 <body>
-	<header class="scroll">
-		<a href="index.html#navbar"><img src="./images/brochureVayam2.jpg" width="90%"></a>
-		<a target="_blank"><img src="./images/VayamLogoTransparent.png" class="img"
-				style="position: absolute; left: 200px; top: 20px;"></a>
-	</header>
+
+  <!-- ======= Header ======= -->
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a
+            href="mailto:vayammovement@gmail.com">vayammovement@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91-02520-295110, +91-9421564330</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
+        <a href="https://www.facebook.com/VayamIndia" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/vayammovement/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/@vayammovement2878" class="youtube"><i class="bi bi-youtube"></i></i></a>
+        <a href="https://vayamindia.wordpress.com" class="blog"><i class="bi bi-wordpress"></i></i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar -->
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/VayamLogoTransparent.png" alt="">
+        <!-- <h1>Impact<span>.</span></h1> -->
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Action</a></li>
+          <li><a href="#portfolio">Impact</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blog.html">GIS</a></li>
+          <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Editorials</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="#">Videos</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+
+    <div class="container position-relative">
+      <div class="row gy-5" data-aos="fade-in">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+          <h2>Welcome to <span>Vayam!</span></h2>
+          <p class="fst-italic">‘Vayam’ means we or us. Vayam is a people’s movement which emerged in the hill villages
+            of Jawhar almost two decades back. The very
+            activity of ours is conceived by people’s needs and has full participation of people throughout
+            implementation.</p>
+
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="https://youtu.be/9HB_C4wrZIY" class="glightbox btn-watch-video d-flex align-items-center"><i
+                class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <img src="assets/img/VayamLogoTransparent.png" class="img-fluid" alt="" data-aos="zoom-out"
+            data-aos-delay="100">
+        </div>
+      </div>
+    </div>
+
+    <div class="icon-boxes position-relative">
+      <div class="container position-relative">
+        <div class="row gy-4 mt-5">
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <!-- <div class="icon"><i class="bi bi-easel"></i></div>
+              <h4 class="title"><a href="" class="stretched-link">Lorem Ipsum</a></h4> -->
+              <a href="assets/img/icons/impact1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                  src="assets/img/icons/impact1.jpg" class="img-fluid" alt="" data-aos="zoom-out"
+                  data-aos-delay="100"></a>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <!-- <div class="icon"><i class="bi bi-gem"></i></div>
+              <h4 class="title"><a href="" class="stretched-link">Sed ut perspiciatis</a></h4> -->
+              <!-- <img src="assets/img/icons/impact2.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100"> -->
+              <a href="assets/img/icons/impact2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                  src="assets/img/icons/impact2.jpg" class="img-fluid" alt="" data-aos="zoom-out"
+                  data-aos-delay="100"></a>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <a href="assets/img/icons/impact3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                  src="assets/img/icons/impact3.jpg" class="img-fluid" alt="" data-aos="zoom-out"
+                  data-aos-delay="100"></a>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <a href="assets/img/icons/impact4.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                  src="assets/img/icons/impact4.jpg" class="img-fluid" alt="" data-aos="zoom-out"
+                  data-aos-delay="100"></a>
+            </div>
+          </div><!--End Icon Box -->
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>About Us</h2>
+          <p class="fst-italic">We are a people’s movement.
+            We feel proud to mention that our centre was built by voluntary labour of 15 villages. Every
+            activity of ours is conceived by people’s needs and has full participation of people throughout
+            implementation. It would be apt to write the names of about five thousand village volunteers here.
+            But the limits of this medium do not allow that. We salute our village volunteers here!</p>
+        </div>
+        <div class="section-header">
+          <h4>Mission</h4>
+          <p class="fst-italic">Beginning with the vulnerable, empowering with law-based advocacy, and driving through
+            village community institutions to create better waters, forests, and land.</p>
+        </div>
+        <div class="section-header">
+          <h4>Vision</h4>
+          <p class="fst-italic">Building a people’s movement for inclusion, democracy, and sustainable life on land</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <h3>Gram-Sabha: A Village Democracy</h3>
+            <img src="assets/img/index/Homepage_8.jpeg" class="img-fluid rounded-4 mb-4" alt="">
+            <p>People in a democracy need a structure that can absorb and realise their needs and their dreams.
+              <strong>A place and an institution where people can sit, deliberate, and decide.</strong>
+              For rural Bharat, that very structure is <strong>Gram Sabha</strong>. Gram Sabha is a general body
+              comprising of all voters.
+              Gram Sabha has government funds and well-defined powers.
+              Despite enabling provisions in the constitution and the legislations, Gram Sabhas are far from being in
+              the driving seat.
+              <strong>Vayam fills this crucial gap.</strong>
+            </p>
+            <p>Vayam empowers the foundation of democracy, i.e. Gram Sabha by nurturing local leadership. Vayam nurtures
+              leaders at roots by making them aware of resources and democratic processes.</p>
+
+            <p>
+              Vayam aims at making leaders who would rather cooperate than compete. Leaders who would rather share than
+              usurp.
+            </p>
+            <p>
+              A question must be lingering in your mind.
+            </p>
+            <p>
+              Is this even possible? Yes. It is. Yes - not once, not twice, but dozens of times.
+            </p>
+
+          </div>
+          <div class="col-lg-6">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Vayam has experimented ceaselessly to be able to stand by its own standards. That's why :
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i>We have constantly indulged in defining
+                  <strong>empowerment</strong> and delivering it
+                </li>
+                <li><i class="bi bi-check-circle-fill"></i> We don’t teach <strong>leadership</strong> in training
+                  sessions confined by four walls. We carve leaders from the common people who have no money, no power
+                  but an indomitable will power to make a difference in their lives
+                </li>
+                <li><i class="bi bi-check-circle-fill"></i> We <strong>accompany</strong> them on every step: Be it
+                  advocating for employment promised under employment guarantee act. Be it getting 5% PESA funds
+                  entitled for Gram Sabhas. Be it managing water resources. Conserving forests. Be it maintaining
+                  transparency and then expecting it from the government
+                </li>
+              </ul>
+
+              <p>
+                Vayam, along with many Gram Sabhas has been walking this path of meaningful democracy and sustainable
+                growth – where everyone gets equal opportunity to decide, develop and dream.
+              </p>
+
+              <div class="position-relative mt-4">
+                <img src="assets/img/index/Gallery_5.jpg" class="img-fluid rounded-4" alt="">
+                <a href="https://youtu.be/lgXnHfbneAI" class="glightbox play-btn"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/icons/SDG1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/icons/SDG2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/icons/SDG4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/icons/SDG5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/icons/SDG8.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/icons/SDG10.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/icons/SDG11.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/icons/SDG12.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/icons/SDG11.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/icons/SDG12.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/icons/SDG13.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/icons/SDG15.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/icons/SDG16.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 align-items-center">
+
+          <div class="col-lg-6">
+            <img src="assets/img/brochureVayam_2.jpg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6">
 
 
-	<nav id="navbar" class="navbar">
-		<a href="#navbar">Home</a>
-		<!-- <a href="#aboutus">About us</a> -->
-		<a href="#contactus">Contact us</a>
-		<a href="./webpages/research.html">Projects</a>
-		<a href="./webpages/gallery.html">Stories</a>
-		<a href="./webpages/VayamPrakalp.html">GIS</a>
-		<a href="./webpages/linktree.html">Linktree</a>
-		<a href="./webpages/blog.html">Blog</a>
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="18000" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Families</strong> freed from distress migration</p>
+            </div><!-- End Stats Item -->
 
-	</nav>
-	<section class="row">
-		<div class="side">
-			<h1 align="center"><strong>Vision</strong></h1>
-			<hr>
-			<!-- <div id ="div1" style="height: 10px;width: 10%; " align="center">
-				<img src="./images/VayamLogoTransparent.png" >
-			</div> -->
-			<div>
-				<h2 align="center">Building a people’s movement for inclusion, democracy, and sustainable life on land
-				</h2>
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="25000" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Trees</strong> planted</p>
+            </div><!-- End Stats Item -->
 
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Water Bodies</strong> restored</p>
+            </div><!-- End Stats Item -->
 
-			</div>
-			<hr>
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Nutrition Mini Farms</strong> created</p>
+            </div><!-- End Stats Item -->
 
-			<h1 align="center"><strong>Mission</strong></h1>
-			<!-- <p align="justify" style="line-height: 1.6">Beginning with the vulnerable, empowering with law-based
-				advocacy, and driving through village community institutions to create better waters, forests, and land.
-			</p> -->
-			<div>
-				<h2 align="center">Beginning with the vulnerable, empowering with law-based
-					advocacy, and driving through village community institutions to create better waters, forests, and land.
-				</h2>
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Documented</strong> indigenous plant/tree species</p>
+            </div><!-- End Stats Item -->
 
 
-			</div>
-			<hr>
-
-			<div class="image">
-				<a href="./webpages/VayamPrakalp.html">
-					<img src="./images/VayamFieldWork.PNG" style="width: 100%;">
-				</a>
-				<h3 class="sidetext">Field Work</h3>
-			</div><br />
-			<div class="image"><img src="./images/gallery8.jpg" style="width: 100%;">
-				<!-- <h3 class="sidetext">Children, Our Asset</h3> -->
-			</div><br />
-			<div class="image"><img src="./images/gallery4.jpg" style="width: 100%;">
-				<!-- <h3 class="sidetext">Children, Our Future</h3> -->
-			</div>
-
-		</div>
-		<div class="main">
-
-			<h2 align="center"><strong>About Us</strong></h2>
-			<hr>
-
-			<div class="image" style="line-height: 1.6; font-size: 20px; font-family: sans-serif;">
-				<h3 align="justify">We are a people’s movement.
-					We feel proud to mention that our centre was built by voluntary labour of 15 villages. Every
-					activity of ours is conceived by people’s needs and has full participation of people throughout
-					implementation. It would be apt to write the names of about five thousand village volunteers here.
-					But the limits of this medium do not allow that. We salute our village volunteers here!
-				</h3>
-			</div>
-
-			<h2 align="center"><strong>Thrust Areas</strong></h2>
-			<hr>
-
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-					<li data-target="#myCarousel" data-slide-to="3"></li>
-					<li data-target="#myCarousel" data-slide-to="4"></li>
-					<li data-target="#myCarousel" data-slide-to="5"></li>
-					<li data-target="#myCarousel" data-slide-to="6"></li>
-					<li data-target="#myCarousel" data-slide-to="7"></li>
-					<li data-target="#myCarousel" data-slide-to="8"></li>
-				</ol>
-
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" align="center">
-					<div class="item active">
-						<img src="./images/Homepage_1.jpeg" class="d-block w-100" alt="image1" style="max-height:100vh;">
-					</div>
-
-					<div class="item">
-						<img src="./images/Homepage_2.jpg" class="d-block w-100" alt="image1" style="max-height:100vh;">
-					</div>
-					<div class="item">
-						<img src="./images/Homepage_3.jpeg" class="d-block w-100" alt="image1" style="max-height:100vh;">
-					</div>
-					<div class="item">
-						<img src="./images/Homepage_4.jpg" class="d-block w-100" alt="image1" style="max-height:100vh;">
-					</div>
-					<div class="item">
-						<img src="./images/Homepage_5.jpeg" class="d-block w-100" alt="image1" style="max-height:100vh;">
-					</div>
-					<div class="item">
-						<img src="./images/Homepage_6.jpeg" class="d-block w-100" alt="image1" style="max-height:100vh;">
-					</div>
-					<div class="item">
-						<img src="./images/Homepage_7.jpeg" class="d-block w-100" alt="image1" style="max-height:100vh;">
-					</div>
-					<div class="item">
-						<img src="./images/Homepage_8.jpeg" class="d-block w-100" alt="image1" style="max-height:100vh;">
-					</div>
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="68" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Forest Food Festivals</strong> organised</p>
+            </div><!-- End Stats Item -->
 
 
-				</div>
-
-				<!-- Left and right controls -->
-				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#myCarousel" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-
-			<br>
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Honey-Bee Keepers</strong> trained</p>
+            </div><!-- End Stats Item -->
 
 
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Science Labs</strong> Dhadpad Prayogshalas without walls</p>
+            </div><!-- End Stats Item -->
 
-			<hr>
-			<div class="image" id="contactus">
-				<h2 align="center"> Contact Us</h2>
-				<form>
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Village Biodiversity Registers</strong> created</p>
+            </div><!-- End Stats Item -->
 
-					<div><input class="form" type="text" placeholder="Email id"></div><br />
-					<div><input class="form" type="text" placeholder="First Name"></div><br />
-					<div><input class="form" type="text" placeholder="Last Name"></div><br />
-					<div><input class="form" type="text" placeholder="Your message here"></div><br />
-					<div align="center"><button type="submit"> Submit</button></div>
-				</form>
+          </div>
 
-			</div>
-			<hr>
-			<div class="inline-flex w-56 justify-evenly mt-4 text-xl duration-1000 ">
-				<!-- Instagram -->
-				<a href="https://www.instagram.com/amrohann" target="_blank">
-					<span class="text-3xl"><i class="fa-brands fa-instagram"></i></span>
-				</a>
+        </div>
 
-				<!-- Telegram -->
-				<a href="https://t.me/amrohan" target="_blank">
-					<span class="text-3xl"><i class="fa-solid fa-paper-plane"></i></span>
-				</a>
+      </div>
+    </section><!-- End Stats Counter Section -->
 
-				<!-- Twitter -->
-				<a href="https://twitter.com/rohansalunkhe_" target="_blank">
-					<span class="text-3xl"><i class="fab fa-twitter"></i></span>
-				</a>
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action" class="call-to-action">
+      <div class="container text-center" data-aos="zoom-out">
+        <a href="https://youtu.be/lgXnHfbneAI" class="glightbox play-btn"></a>
+        <h3>GramSabha Jagran - Voices of People </h3>
+        <p>We the people</p>
+        <a class="cta-btn" href="#">Vayam in Action</a>
+      </div>
+    </section><!-- End Call To Action Section -->
 
-				<!-- Gmail -->
-				<a href="mailto: amrohan@duck.com">
-					<span class="text-3xl"><i class="fas fa-envelope"></i></span>
-				</a>
+    <!-- ======= Our Services Section ======= -->
+    <section id="services" class="services sections-bg">
+      <div class="container" data-aos="fade-up">
 
-				<!-- Github -->
-				<a href="https://github.com/amrohan" target="_blank">
-					<span class="text-3xl"><i class="fab fa-github"></i></span>
-				</a>
-			</div>
+        <div class="section-header">
+          <h2>Vayam in Action</h2>
+          <p>People in tribal villages have been living in harmony with forests for generations. Two centuries ago, they
+            were protectors of the Jungle. British denounced them as encroachers. It took a long time to remove this
+            historical injustice.</p>
+        </div>
 
-			<!-- <h2 align="center">SDGs we work on</h2>
-		    <hr> -->
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
 
-			<!-- <div style="height:200px;">
-		    	<div class="iconbar" align="center" style="display: flexbox">
-			    	<img class="icons" src="./images/SDG1.png" >		    	
-				   	<img class="icons" src="./images/SDG2.png">
-				   	<img class="icons" src="./images/SDG3.png">			    
-				    <img class="icons" src="./images/SDG4.png">
-				    <img class="icons" src="./images/SDG5.png">
-		        </div>
-				<div class="iconbar" align="center" style="display: flexbox">
-				    <img class="icons" src="./images/SDG8.png" >			    	
-					<img class="icons" src="./images/SDG10.png">
-					<img class="icons" src="./images/SDG11.png">
-				 	<img class="icons" src="./images/SDG12.png">
-				 	<img class="icons" src="./images/SDG13.png">
-				</div>
-				<div class="iconbar" align="center" style="display: flexbox">
-				 	<img class="icons" src="./images/SDG15.png" >
-				 	<img class="icons" src="./images/SDG16.png">
-				</div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-tree"></i>
+              </div>
+              <h3>Securing Rights in FRA</h3>
+              <p>Vayam has helped tribal farmers and forest dwellers acquire their land rights as per the Forest Rights
+                Act (FRA) 2006. We have put our efforts into capacity building of villagers and frontline government
+                staff, and in lobbying for rights from district to state level. We have been successful in securing land
+                rights (IFR) of 4,500 farmers. We have also helped 15 villages secure Community Forest Resource Rights
+                (CFRR) over an average of 100 hectares each.</p>
+              <!-- <p>The relationship people have with the forest is symbiotic. They are dependent on forests for food, fodder, firewood, medicines, water, and small but never-failing sources of livelihood:  seeds, gum, leaves, fruits, honey and what not that a forest offers. A true forest dweller will never sleep hungry in the forest even though forests are degraded in the northern belt of western ghats. Traditions have been teaching people to nurture the forest to help it nurture them. So, what we can see now is traditions are becoming soul-less and losing their purpose.</p> -->
+              <a href="junglejeevika.html" class="readmore stretched-link">Read more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
 
-		   	</div> -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <h3>Padopadi Swaraj</h3>
+              <p>Pada means a small hamlet and our constitution says that each village shall have a Gram-Sabha; a
+                self-governing assembly. ‘Padopadi Swaraj’ is our endeavour to take the constitutional provisions to
+                every small village i.e. padopadi. Vayam has helped many villages across four tribal blocks to build
+                strong community institutions; i.e. Gram-Sabha. These Gram-Sabhas are legally recognized local governing
+                bodies with direct participation of citizens. The empowered Gram Sabhas have brought openness in
+                government schemes, transparency in funds, and have framed rules for judicious extraction from forest
+                and water sources. </p>
+              <a href="padopadiswaraj.html" class="readmore stretched-link">Read more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
 
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <h3>PESA Jagran Abhiyan</h3>
+              <p>Through this initiative we aim to bring new villages in the realm of effective and just self-governance
+                as envisaged in <strong>PESA (Panchayats Extension to Scheduled Areas)</strong> law. The law requires
+                that a majority of voters in a small hamlet or Pada sit together and pass a resolution for notifying a
+                separate Gramsabha. Vayam volunteers fan out to far-off villages, to alert and motivate people to become
+                self-reliant through their own Gram Sabhas. Many villages have responded positively and received
+                separate Gram-Sabha status as well as funds to run it efficiently. </p>
+              <!-- <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+          </div><!-- End Service Item -->
 
-		</div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-ban"></i>
+              </div>
+              <h3>Zero Distress Migration</h3>
+              <p>National Rural Employment Guarantee Act (NREGA) assures all villagers unskilled wage employment in
+                their own village, only if they demand so. From fighting the bureaucracy about non-availability of
+                demand forms, to getting wages on time, and to exposing corruption - Vayam team has taken on every
+                battle. And has won - for 18,000 families from 200+ villages - decent work and wages. Many villages are
+                self-reliant and Vayam is proud that these villages don’t need Vayam’s help anymore. This has reduced
+                the distress migration of people and has brought stability in families and security for children. </p>
+              <!-- <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+          </div><!-- End Service Item -->
 
-		</div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-basket-fill"></i>
+              </div>
+              <h3>‘Su’poshan</h3>
+              <p>People grow vegetables in their backyards in monsoon. Once the monsoon is over, fresh vegetables vanish
+                from their daily diet. This contributes to the infamous malnutrition problem of tribals. Vayam
+                introduced a mini-veggie-farm (Bhaji wadi) along with a mini-farm-pond (5000 liters with geo-membrane
+                mulching) to water the mini-farm for at least five to six months. This has assured fresh vegetables in
+                the daily diet of 300 tribal families. There is no better guarantee of ‘Zero Hunger’ than people being
+                able to grow and eat their own food. </p>
+              <!-- <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+          </div><!-- End Service Item -->
 
-		<footer>
-			<a href="index.html#navbar"><img src="./images/brochureVayam2.jpg" width="100%"></a>
-		</footer>
-	</section>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-book-half"></i>
+              </div>
+              <h3>Dhadpad Prayogshala</h3>
+              <p>This is a small make-n-break laboratory set up by Vayam in all local government (ZP) high schools.
+                Children can make many models (as well as break them) in this laboratory that covers the entire science
+                curriculum of high schools. The models use all low-cost trash material easily accessible to children.
+                The principle and practice of ‘Learning by Doing’ has made science easy. </p>
+              <!-- <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Our Services Section -->
 
 
 
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio sections-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Impact</h2>
+          <p>Some field examples of Vayam and ironwill of the villagers.</p>
+        </div>
+
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
+          data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+
+          <div>
+            <ul class="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-gramsabha">Gramsabha</li>
+              <li data-filter=".filter-reverse-migration">Reverse Migration</li>
+              <li data-filter=".filter-suposhan">Nutrition</li>
+              <li data-filter=".filter-education">Education</li>
+              <li data-filter=".filter-community-works">Community Works</li>
+            </ul><!-- End Portfolio Filters -->
+          </div>
+
+          <div class="row gy-4 portfolio-container">
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-gramsabha">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/gramsabha-1.jpeg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/gramsabha-1.jpeg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Gramsabha: Democracy in Village</a></h4>
+                  <p>Villagers holding a gramsabha</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-gramsabha">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/gramsabha-2.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/gramsabha-2.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Gramsabha: The resolution passing</a></h4>
+                  <p>Villagers after successfully passing a resolution</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-gramsabha">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/gramsabha-3.jpeg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/gramsabha-3.jpeg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Gramsabha in progress</a></h4>
+                  <p>Both genders play an equal role in Gramsabha</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-gramsabha">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/gramsabha-4.jpeg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/gramsabha-4.jpeg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Gramsabha: Demanding work</a></h4>
+                  <p>Villagers documenting the issues in a gramsabha</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-gramsabha">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/gramsabha-5.jpeg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/gramsabha-5.jpeg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Gramsabha</a></h4>
+                  <p>Resolution to execution</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-gramsabha">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/gramsabha-6.jpeg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/gramsabha-6.jpeg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Gramsabha</a></h4>
+                  <p>Happy faces</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-reverse-migration">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/reverse-migration-1.jpeg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/reverse-migration-1.jpeg" class="img-fluid"
+                    alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Reversing Migration</a></h4>
+                  <p>Villagers getting work in their own village</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-reverse-migration">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/reverse-migration-2.jpeg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/reverse-migration-2.jpeg" class="img-fluid"
+                    alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Reversing Migration</a></h4>
+                  <p></p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-suposhan">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/suposhan-1.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/suposhan-1.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Nutrition</a></h4>
+                  <p>Backyad vegetable patch</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-suposhan">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/suposhan-2.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/suposhan-2.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Nutritional Security</a></h4>
+                  <p>Tasty and Plenty, backyard vegetable patch</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-suposhan">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/suposhan-3.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/suposhan-3.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Forest Food Festivals</a></h4>
+                  <p>Celebrating local biodiversity</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-education">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/education-1.jpeg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/education-1.jpeg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Dhadpad Prayogshala</a></h4>
+                  <p>from Dhak-Dhak to "Dhad-Pad"</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-education">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/education-2.jpeg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/education-2.jpeg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Dhadpad Prayogshala</a></h4>
+                  <p>Know your body</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-community-works">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/water-resources-1.jpeg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/water-resources-1.jpeg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Farm Pond</a></h4>
+                  <p>No more Summer "water works" </p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-community-works">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/water-resources-2.jpeg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/water-resources-2.jpeg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Community Well</a></h4>
+                  <p>Constructing community well</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/beekeeping.jpeg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/beekeeping.jpeg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Honeybee Keeping</a></h4>
+                  <p>Oh! we know who's the queen</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/biodiversity-register.png" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/biodiversity-register.png" class="img-fluid"
+                    alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Documenting</a></h4>
+                  <p>Documenting and Surveying</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/president-1.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/president-1.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Vayam with Hon'ble President Smt. Droupadi Murmu</a></h4>
+                  <p>Hon'ble President Smt. Droupadi Murmu</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/president-2.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/president-2.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Vayam with Hon'ble President Smt. Droupadi Murmu</a></h4>
+                  <p>Hon'ble President Smt. Droupadi Murmu</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Team</h2>
+          <p>Each and every Vayam <i>karyakarta</i> is our strength. However mentioning everyone is not prudent given
+            the limits of the medium. We thank all our <i>karyakartas</i> on this platform.
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpeg" class="img-fluid" alt="">
+              <h4>Milind Thatte</h4>
+              <span>Secretary & Managing Trustee</span>
+              <!-- <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpeg" class="img-fluid" alt="">
+              <h4>Vinayak Thalkar</h4>
+              <span>President</span>
+              <!-- <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/team-4.jpeg" class="img-fluid" alt="">
+              <h4>Prakash Baraf</h4>
+              <span>Operations</span>
+              <!-- <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpeg" class="img-fluid" alt="">
+              <h4>Deepali Gogate</h4>
+              <span>Executive Head</span>
+              <!-- <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+        <!-- 
+        <div class="section-header">
+          <h2>Board Members</h2>
+        </div>
+       <p>अनिल लोहार, बाबल्या तुंबडा, अनंत बरफ, जयराम टोकरे, भारत पाटारा, मोहन भोरे 
+        देवेंद्र थोटगा, विक्रमगड तालुका प्रमुख
+        भास्कर चिभडे मोखाडा तालुका प्रमुख 
+        नामदेव टोकरे, त्र्यंबकेश्वर तालुका प्रमुख</p>
+
+ -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Board Members</h2>
+          <p>अनिल लोहार, बाबल्या तुंबडा, अनंत बरफ, जयराम टोकरे, भारत पाटारा, मोहन भोरे,</p>
+          <p>देवेंद्र थोटगा <strong>(विक्रमगड तालुका प्रमुख)</strong>,</p>
+          <p>भास्कर चिभडे <strong>(मोखाडा तालुका प्रमुख)</strong>,</p>
+          <p>नामदेव टोकरे <strong>(त्र्यंबकेश्वर तालुका प्रमुख)</strong></p>
+          </p>
+        </div>
+
+        <div class="section-header">
+          <h2>Board of Trustees</h2>
+          <p>Milind Thatte (Secretary and managing trustee)</p>
+          <p>Prakash Bhide (Trustee)</p>
+          <p>Amit Tillu (Trustee)</p>
+        </div>
+
+
+
+
+      </div>
+    </section>
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <!-- <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="content px-xl-5">
+              <h3>Frequently Asked <strong>Questions</strong></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+
+            <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-1">
+                    <span class="num">1.</span>
+                    Non consectetur a erat nam at lectus urna duis?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                    gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  </div>
+                </div>
+              </div># Faq item -->
+
+    <!-- <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-2">
+                    <span class="num">2.</span>
+                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                    donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div># Faq item -->
+
+    <!-- <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-3">
+                    <span class="num">3.</span>
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
+                    elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque
+                    eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis
+                    sed odio morbi quis
+                  </div>
+                </div>
+              </div># Faq item -->
+
+    <!-- <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-4">
+                    <span class="num">4.</span>
+                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                    donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div># Faq item -->
+
+    <!-- <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-5">
+                    <span class="num">5.</span>
+                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in.
+                    Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.
+                    Purus gravida quis blandit turpis cursus in
+                  </div>
+                </div>
+              </div># Faq item -->
+    <!-- 
+            </div>
+
+          </div>
+        </div>
+
+      </div> -->
+    <!-- </section>End Frequently Asked Questions Section -->
+
+    <!-- ======= Recent Blog Posts Section ======= -->
+    <section id="recent-posts" class="recent-posts sections-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Recent Blog Posts</h2>
+          <p>To read more about what we are and what we do ... Join the bandwagon!!!</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-md-6">
+            <article>
+
+              <div class="post-img">
+                <img src="assets/img/blog/blog2.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Annual Report</p>
+
+              <h2 class="title">
+                <a href="blog-details.html">वयम् वार्षिकी 2020</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="assets/img/VayamLogoTransparent.png" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Vayam India</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Jan 14, 2021</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6">
+            <article>
+
+              <div class="post-img">
+                <img src="assets/img/blog/blog21.webp" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Annual Report</p>
+
+              <h2 class="title">
+                <a href="blog-post2.html">14th Annual 2021</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="assets/img/VayamLogoTransparent.png" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Vayam India</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Jan 25, 2022</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+        </div><!-- End recent posts list -->
+
+      </div>
+    </section><!-- End Recent Blog Posts Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>For donations, feedback do contact us ...</p>
+        </div>
+
+        <div class="row gx-lg-0 gy-4">
+
+          <div class="col-lg-4">
+
+            <div class="info-container d-flex flex-column align-items-center justify-content-center">
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h4>Location:</h4>
+                  <p>Lokshahi Jagar Kendra, At Jambulvihir, </p>
+                  <p>Po. Tq. Jawhar Dist. Palghar 401603</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <p>vayammovement@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-phone flex-shrink-0"></i>
+                <div>
+                  <h4>Call:</h4>
+                  <p>+91-02520-295110, +91-9421564330</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-clock flex-shrink-0"></i>
+                <div>
+                  <h4>Open Hours:</h4>
+                  <p>Mon-Sat: 10AM - 6PM</p>
+                </div>
+              </div><!-- End Info Item -->
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/VayamLogoTransparent.png" class="img-fluid" alt="" data-aos="zoom-out"
+              data-aos-delay="100">
+          </div>
+
+          <p></p>
+          <div class="social-links d-flex mt-3">
+            <a href="https://www.facebook.com/VayamIndia" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/vayammovement/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@vayammovement2878" class="youtube"><i class="bi bi-youtube"></i></i></a>
+            <a href="https://vayamindia.wordpress.com" class="blog"><i class="bi bi-wordpress"></i></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-5 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Action</a></li>
+            <li><a href="#portfolio">Impact</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html">GIS</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div> -->
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            Vayam,
+            <br>Lokshahi Jagar Kendra,
+            <br>At Jambulvihir Po. Tq. Jawhar Dist.
+            <br>Palghar 401603
+            <br>
+            <br>
+            <strong>Phone:</strong> +91-02520-295110, +91-9421564330<br>
+            <strong>Email:</strong> vayammovement@gmail.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Vayam India</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
