@@ -35,6 +35,47 @@
   * Updated: Mar 13 2024 with Bootstrap v5.3.3
   * Author: Sudhanshu Kulkarni
   ======================================================== -->
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init({
+        publicKey: "9jeo2EH7Bc8K-sLCi",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        const inputData = {
+          from_name: document.querySelector('user_name'),
+          reply_to: document.querySelector('user_email'),
+          message: document.querySelector('message')
+        }
+        emailjs.sendForm('service_7cwhib4', 'template_cvn5pkq', this)
+          .then(() => {
+            console.log('SUCCESS!');
+          }, (error) => {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script> -->
+
+  <script src="assets/js/app.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "9jeo2EH7Bc8K-sLCi",
+      });
+    })();
+
+  </script>
 </head>
 
 <body>
@@ -76,7 +117,7 @@
           <li><a href="blog.html">GIS</a></li>
           <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Editorials</a></li>
+              <li><a href="linktree.html">Editorials</a></li>
               <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
                     class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
@@ -182,8 +223,7 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>About Us</h2>
-          <p class="fst-italic">We are a people’s movement.
-            We feel proud to mention that our centre was built by voluntary labour of 15 villages. Every
+          <p class="fst-italic">We are a people’s movement. Every
             activity of ours is conceived by people’s needs and has full participation of people throughout
             implementation. It would be apt to write the names of about five thousand village volunteers here.
             But the limits of this medium do not allow that. We salute our village volunteers here!</p>
@@ -1072,7 +1112,7 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="contact-form" action="post"  class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -1082,19 +1122,58 @@
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" id="message" rows="7" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" onclick="sendMail()">Send Message</button></div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
+
+          <!-- <div class="col-lg-8">
+            <div class="container border mt-3 bg-light">
+              <div class="row">
+                <div class="col-md-6 p-5 bg-primary text-white">
+                  <h4>
+                    dfjaklfj afldkasjf lkdasfj aslkj kjfkasdf
+                  </h4>
+  
+                </div>
+                <div class="col-md-6 py-3">
+                  <h1>Contact form</h1>
+                  <div class="form-group">
+                    <h5 for="name">Name</h5>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required/>
+                  </div>
+                  <div class="form-group">
+                    <h5 for="email">Email</h5>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+                  </div>
+                  <div class="form-group">
+                    <h5 for="message">Message</h5>
+                    <textarea id="message" rows="3" class="form-control" required></textarea>
+                  </div>
+                  <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+                </div>
+  
+              </div>
+  
+            </div>
+
+          </div> -->
+
+
+
+
+
+
+
+
+
+
 
         </div>
 
