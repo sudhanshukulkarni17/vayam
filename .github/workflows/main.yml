@@ -1,21 +1,24 @@
 on:
   push:
-    branches:
-      - main
-name: Deploy website on push
+    branches: [main]
+  workflow_dispatch:
+
 jobs:
-  web-deploy:
+  deploy:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Get latest code
-      uses: actions/checkout@v3
-    - name: Push files
-      uses: vayam/FTP-Deploy-Action@v1.2.0
-
-    - name: Push files
-      uses: Vayam code 
-      with:
-        server: vayammovement.in
-        username: ftp-upload@vayammovement.in
-        password: ${{ secrets.ftp_password }}
+      - name: Checkout repository
+        uses: actions/checkout@main
+      - name: Download artifact
+        uses: actions/download-artifact@main
+      - name: Sync files to hosting
+        uses: vayam.github.io/FTP-Deploy-Action@1.2.0
+        with:
+          server: vayammovement.in
+          username: ftp-upload@vayammovement.in
+          password: ${{ secrets.ftp_password }}
+          
+        
+    
+  
