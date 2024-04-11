@@ -13,7 +13,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@main
       - name: Sync files to hosting
-        uses: sudhanshukulkarni17/vayam@1.2.0
+        uses: sudhanshukulkarni17/vayam
         with:
           server: vayammovement.in
           username: ftp-upload@vayammovement.in
