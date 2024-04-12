@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v1.1.0
       - name: Download artifact
         uses: actions/download-artifact@main
       - name: Sync files to hosting
