@@ -1,79 +1,52 @@
-name: 'GitHub Pages action'
-description: 'GitHub Actions for GitHub Pages 🚀 Deploy static files and publish your site easily. Static-Site-Generators-friendly.'
-author: 'Sudhanshu'
-runs:
-  using: 'node20'
-  main: 'dist/index.js'
-branding:
-  icon: 'upload-cloud'
-  color: 'blue'
+name: "FTP Deploy"
+description: "Automate deploying websites and more with this GitHub action via FTP and FTPS"
+author: "Sudhanshu"
 inputs:
-  deploy_key:
-    description: 'Set a SSH private key from repository secret value for pushing to the remote branch.'
+  server:
+    required: true
+    description: "ftp server"
+  username:
+    required: true
+    description: "ftp username"
+  password:
+    required: true
+    description: "ftp password"
+  port:
     required: false
-  github_token:
-    description: 'Set a generated GITHUB_TOKEN for pushing to the remote branch.'
+    description: "Server port to connect to (read your web hosts docs)"
+  protocol:
     required: false
-  personal_token:
-    description: 'Set a personal access token for pushing to the remote branch.'
+    description: "protocol to deploy with - ftp, ftps, or ftps-legacy"
+  local-dir:
     required: false
-  publish_branch:
-    description: 'Set a target branch for deployment.'
+    description: "Folder to upload from, must end with trailing slash /"
+  server-dir:
     required: false
-    default: 'gh-pages'
-  publish_dir:
-    description: 'Set an input directory for deployment.'
+    description: "Path to upload to on the server. Must end with trailing slash /"
+  state-name:
     required: false
-    default: 'public'
-  destination_dir:
-    description: 'Set an destination subdirectory for deployment.'
+    description: "Path and name of the state file - this file is used to track which files have been deployed"
+  dry-run:
     required: false
-    default: ''
-  external_repository:
-    description: 'Set an external repository (owner/repo).'
+    description: "Prints which modifications will be made with current config options, but doesnt actually make any changes"
+  dangerous-clean-slate:
     required: false
-  allow_empty_commit:
-    description: 'If empty commits should be made to the publication branch'
+    description: "Deletes ALL contents of server-dir, even items in excluded with exclude argument"
+  exclude:
     required: false
-    default: 'false'
-  keep_files:
-    description: 'If existing files in the publish branch should be not removed before deploying'
+    description: "An array of glob patterns, these files will not be included in the publish/delete process"
+  log-level:
     required: false
-    default: 'false'
-  force_orphan:
-    description: 'Keep only the latest commit on a GitHub Pages branch'
+    description: "How verbose should the information be - minimal, standard, or verbose"
+  security:
     required: false
-    default: 'false'
-  user_name:
-    description: 'Set Git user.name'
+    description: "strict or loose"
+  timeout:
     required: false
-  user_email:
-    description: 'Set Git user.email'
-    required: false
-  commit_message:
-    description: 'Set a custom commit message with a triggered commit hash'
-    required: false
-  full_commit_message:
-    description: 'Set a custom full commit message without a triggered commit hash'
-    required: false
-  tag_name:
-    description: 'Set tag name'
-    required: false
-  tag_message:
-    description: 'Set tag message'
-    required: false
-  enable_jekyll:
-    description: 'Enable the GitHub Pages built-in Jekyll'
-    required: false
-    default: 'false'
-  disable_nojekyll:
-    description: 'An alias for enable_jekyll to disable adding .nojekyll file to a publishing branch'
-    required: false
-    default: 'false'
-  cname:
-    description: 'Set custom domain'
-    required: false
-  exclude_assets:
-    description: 'Set files or directories to exclude from a publish directory.'
-    required: false
-    default: '.github'
+    description: "Timeout in milliseconds for FTP operations"
+runs:
+  using: "node20"
+  main: "dist/index.js"
+branding:
+  icon: "upload-cloud"
+  color: "blue"
