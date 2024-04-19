@@ -6,6 +6,10 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      pages: write
+      contents: read
     steps:
       - name: deploy website every commit
         uses: actions/checkout@v1
@@ -15,11 +19,6 @@ jobs:
           ftp-server: vayammovement.in
           ftp-username: ftp-upload@vayammovement.in
           ftp-password: ${{ secrets.ftp_password }}
-permissions:
-  id-token: write # This is required for requesting the JWT
-  contents: read  # This is required for actions/checkout
 
-          
-        
     
   
