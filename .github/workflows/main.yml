@@ -12,10 +12,9 @@ jobs:
       - name: Sync files to hosting
         uses: ./
         with:
-          server: vayammovement.in
-          username: ftp-upload@vayammovement.in
-          password: ${{ secrets.ftp_password }}
-          protocol: ftps
+          ftp-server: vayammovement.in
+          ftp-username: ftp-upload@vayammovement.in
+          ftp-password: ${{ secrets.ftp_password }}
           
         
     
