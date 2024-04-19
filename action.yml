@@ -1,9 +1,9 @@
 name: 'GitHub Pages action'
 description: 'GitHub Actions for GitHub Pages 🚀 Deploy static files and publish your site easily. Static-Site-Generators-friendly.'
-author: 'peaceiris'
+author: 'Sudhanshu'
 runs:
   using: 'node20'
-  main: 'lib/index.js'
+  main: 'assets/js/main.js'
 branding:
   icon: 'upload-cloud'
   color: 'blue'
