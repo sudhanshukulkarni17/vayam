@@ -11,6 +11,9 @@ jobs:
       id-token: write
       pages: write
       contents: read
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Get latest code
         uses: actions/checkout@v4
