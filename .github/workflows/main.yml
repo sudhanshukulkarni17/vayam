@@ -10,7 +10,7 @@ jobs:
       - name: deploy website every commit
         uses: actions/checkout@v1
       - name: Sync files to hosting
-        uses: sudhanshukulkarni17/vayam@v1.1.0
+        uses: ./
         with:
           server: vayammovement.in
           username: ftp-upload@vayammovement.in
