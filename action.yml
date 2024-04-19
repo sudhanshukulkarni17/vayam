@@ -3,7 +3,7 @@ description: 'GitHub Actions for GitHub Pages 🚀 Deploy static files and publi
 author: 'Sudhanshu'
 runs:
   using: 'node20'
-  main: 'assets/js/main.js'
+  main: 'lib/index.js'
 branding:
   icon: 'upload-cloud'
   color: 'blue'
