@@ -1,45 +1,19 @@
 on:
   push:
-    branches: [main]
-
+    branches:
+      - main
+name: Deploy website on push
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "18.x"
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./
-  deploy:
+  web-deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      pages: write
-      contents: read
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: deploy website every commit
+      - name: Get latest code
         uses: actions/checkout@v4
-
-
-      - name: Sync files to hosting
+      - name: 📂 Sync files
         uses: ./
         with:
-          ftp-server: vayammovement.in
-          ftp-username: ftp-upload@vayammovement.in
-          ftp-password: ${{ secrets.ftp_password }}
-
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
-
+          server: vayammovement.in
+          username: ftp-upload@vayammovement.in
+          password: ${{ secrets.ftp_password }}
     
-  
