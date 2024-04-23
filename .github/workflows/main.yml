@@ -1,21 +1,19 @@
 on:
   push:
-    branches: [main]
-
+    branches:
+      - main
+name: Deploy website on push
 jobs:
-  deploy:
+  web-deploy:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: deploy website every commit
-        uses: actions/checkout@v1
-      - name: Sync files to hosting
-        uses: ./
+      - name: Get latest code
+        uses: actions/checkout@v4
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          ftp-server: vayammovement.in
-          ftp-username: ftp-upload@vayammovement.in
-          ftp-password: ${{ secrets.ftp_password }}
-          
-        
+          server: vayammovement.in
+          username: ftp-upload@vayammovement.in
+          password: ${{ secrets.ftp_password }}
     
-  
