@@ -629,7 +629,7 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 106, 93, 0.8);
+    background: rgb(107,155,53,.8);
     z-index: 9996;
   }
 }
@@ -1561,7 +1561,7 @@ section {
 }
 
 .pricing ul i {
-  color: #059652;
+  color: #6b9b35;
   font-size: 24px;
   padding-right: 3px;
 }
@@ -1824,7 +1824,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #059652;
+  background: #6b9b35;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1844,7 +1844,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #059652;
+  border: 3px solid #6b9b35;
   border-top-color: #fff;
   animation: animate-loading 1s linear infinite;
 }
