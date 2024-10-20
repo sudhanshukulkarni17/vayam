@@ -2722,3 +2722,11 @@ section {
   font-size: 60px;
   margin-top: 30px;
 }
+
+.bilanguageh3::after {
+  content: attr(data-en);
+  font-family: var(--font-primary);
+  font-size: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+}

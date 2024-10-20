@@ -303,10 +303,10 @@ function marathiEnglishToggle() {
 var currentlanguage = 'en'
 function changelang(){
 if (currentlanguage == 'en'){
-document.head.insertAdjacentHTML('beforeend', '<style>.bilanguage::after {content: attr(data-ma);}</style> <style>.bilanguageh2::after {content: attr(data-ma);}</style>');
+document.head.insertAdjacentHTML('beforeend', '<style>.bilanguage::after {content: attr(data-ma);}</style> <style>.bilanguageh2::after {content: attr(data-ma);}</style> <style>.bilanguageh3::after {content: attr(data-ma);}</style>');
 currentlanguage = 'ma'
 } else {
-document.head.insertAdjacentHTML('beforeend', '<style>.bilanguage::after {content: attr(data-en);}</style> <style>.bilanguageh2::after {content: attr(data-en);}</style>');
+document.head.insertAdjacentHTML('beforeend', '<style>.bilanguage::after {content: attr(data-en);}</style> <style>.bilanguageh2::after {content: attr(data-en);}</style> <style>.bilanguageh3::after {content: attr(data-en);}</style> ');
 currentlanguage = 'en'
 }
 }
