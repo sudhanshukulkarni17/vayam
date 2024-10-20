@@ -291,5 +291,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+function marathiEnglishToggle() {
+  var x = document.getElementById("marathiContent");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+var currentlanguage = 'en'
+function changelang(){
+if (currentlanguage == 'en'){
+document.head.insertAdjacentHTML('beforeend', '<style>.bilanguage::after {content: attr(data-ma);}</style> <style>.bilanguageh2::after {content: attr(data-ma);}</style>');
+currentlanguage = 'ma'
+} else {
+document.head.insertAdjacentHTML('beforeend', '<style>.bilanguage::after {content: attr(data-en);}</style> <style>.bilanguageh2::after {content: attr(data-en);}</style>');
+currentlanguage = 'en'
+}
+}
+
 
 

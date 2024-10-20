@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: #00b6a1;
+  color:#6b9b35;
   text-decoration: none;
 }
 
@@ -2706,4 +2706,19 @@ section {
 
 .footer .credits a {
   color: #fff;
+}
+.bilanguage::after {
+  content: attr(data-en);
+  font-family: var(--font-primary);
+  font-size: 18px;
+  margin-top: 30px;
+}
+.bilanguage {
+  content: attr(data-en);
+}
+.bilanguageh2::after {
+  content: attr(data-en);
+  font-family: var(--font-primary);
+  font-size: 60px;
+  margin-top: 30px;
 }
